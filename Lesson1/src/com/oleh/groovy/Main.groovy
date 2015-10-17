@@ -1,8 +1,11 @@
 package com.oleh.groovy
 
+import groovy.transform.CompileStatic
+
 /**
  * Created by Oleh Kudryavcev on 17.10.15.
  */
+@CompileStatic
 class Main {
 
     static void main(String... args) {
