@@ -13,14 +13,14 @@ class Introduction {
 
     void introduce(Person person) {
         if (shortVersion) {
-            print(shortIntroduction(person))
+            shortIntroduction(person)
         } else {
-            print(fullIntroduction(person))
+            fullIntroduction(person)
         }
     }
 
     private static def shortIntroduction(Person person) {
-        return """
+        print """
                     Hello, my name is ${person.name}.
                     I am ${person.yearsOld} years old.
                     I am ${person.activity}.
@@ -28,11 +28,11 @@ class Introduction {
     }
 
     private static def fullIntroduction(Person person) {
-        return """
+        print """
                     Hello, my name is ${person.name}.
                     I am ${person.yearsOld} years old.
                     I am ${person.activity}.
-                    I like ${person.hobbies.each {hobby -> print hobby + " "}}
+                    I like ${person.hobbies}.
                """
     }
 
