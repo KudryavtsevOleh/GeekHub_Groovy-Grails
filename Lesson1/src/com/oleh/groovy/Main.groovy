@@ -22,7 +22,7 @@ class Main {
     private static involutionTest() {
         int number = 76
         int grade = 44
-        assert number ** grade == Math.pow(76, 44)
+        assert number ** grade == Math.pow(number, grade)
     }
 
 }
