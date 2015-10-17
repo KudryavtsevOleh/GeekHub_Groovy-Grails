@@ -19,9 +19,10 @@ class Main {
         involutionTest()
     }
 
-    //Phone number: 0930144476
     private static involutionTest() {
-        assert 76 ** 44 == Math.pow(76, 44)
+        int number = 76
+        int grade = 44
+        assert number ** grade == Math.pow(76, 44)
     }
 
 }
