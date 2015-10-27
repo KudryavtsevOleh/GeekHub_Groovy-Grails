@@ -1,6 +1,4 @@
-package com.oleh.groovy
-
-import groovy.transform.CompileStatic
+package com.oleh.groovy.builder.json
 
 /**
  * Created by Oleh Kudryavcev on 26.10.15.
@@ -20,7 +18,7 @@ class JsonBuilder {
             commaCounter++
             if (it instanceof Map) {
                 String buildResult = buildFromMap(it, commaCounter < buildFrom.size())
-                builder.append(buildResult, )
+                builder.append(buildResult)
             } else {
                 builder
                         .append('"')
@@ -38,7 +36,7 @@ class JsonBuilder {
         return builder.toString()
     }
 
-    private String buildFromMap(Map buildFrom, Boolean isCommaPresent) {
+    private String buildFromMap(Map buildFrom, Boolean isNeedComma) {
         StringBuilder builder = new StringBuilder()
         int commaCounter = 0
         builder
@@ -61,7 +59,7 @@ class JsonBuilder {
         }
         builder
                 .append(" }")
-                .append(isCommaPresent ? ',' : '')
+                .append(isNeedComma ? ',' : '')
         return builder.toString()
     }
 
