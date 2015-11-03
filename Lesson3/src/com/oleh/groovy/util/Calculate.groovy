@@ -11,7 +11,7 @@ class Calculate {
     }
 
     public static Double validate(Rent rent) {
-        Double result = rent.calculate()
+        Double result = calculate(rent)
         return result
     }
 
