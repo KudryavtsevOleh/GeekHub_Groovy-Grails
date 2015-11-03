@@ -27,8 +27,7 @@ class Phone extends Rent {
 
     @Override
     Double calculate() {
-        Double result = calculateResult()
-        return result
+        return calculateResult()
     }
 
     private Double calculateResult() {

@@ -6,13 +6,11 @@ package com.oleh.groovy.util
 class Calculate {
 
     public static Double calculate(Rent rent) {
-        Double result = rent.calculate()
-        return result
+        return rent.calculate()
     }
 
     public static Double validate(Rent rent) {
-        Double result = calculate(rent)
-        return result
+        return calculate(rent)
     }
 
 }
