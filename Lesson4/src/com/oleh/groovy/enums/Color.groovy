@@ -1,4 +1,4 @@
-package com.oleh.groovy
+package com.oleh.groovy.enums
 
 /**
  * Created by oleh on 16.11.15.

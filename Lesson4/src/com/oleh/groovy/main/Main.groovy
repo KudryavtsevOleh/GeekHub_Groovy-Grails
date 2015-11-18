@@ -1,11 +1,13 @@
-package com.oleh.groovy
+package com.oleh.groovy.main
+
+import com.oleh.groovy.builder.CarBuilder
 
 /**
  * Created by Oleh Kudryavcev on 16.11.15.
  */
 class Main {
 
-    private static final CONFIG_FILE_PATH = '/home/oleh/GeekHub_Groovy&Grails/GeekHub_Groovy-Grails/Lesson4/src/com/oleh/groovy/configuration.txt'
+    private static final CONFIG_FILE_PATH = '/home/oleh/GeekHub_Groovy&Grails/GeekHub_Groovy-Grails/Lesson4/src/com/oleh/groovy/config/configuration.txt'
 
     public static void main(String[] args) {
         CarBuilder builder = new CarBuilder()

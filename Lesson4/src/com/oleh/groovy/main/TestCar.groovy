@@ -1,4 +1,6 @@
-package com.oleh.groovy
+package com.oleh.groovy.main
+
+import com.oleh.groovy.objects.Car
 
 /**
  * Created by Oleh Kudryavcev on 16.11.15.
@@ -20,7 +22,6 @@ class TestCar {
     private Boolean checkEngine(Integer checkedValue) {
         Boolean checkedResult = true
         if (checkedValue == BROKEN_ENGINE) {
-            println 'Engine is broken!!!'
             checkedResult = false
         }
         return checkedResult

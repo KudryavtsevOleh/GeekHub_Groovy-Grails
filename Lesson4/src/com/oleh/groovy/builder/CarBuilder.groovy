@@ -1,4 +1,8 @@
-package com.oleh.groovy
+package com.oleh.groovy.builder
+
+import com.oleh.groovy.enums.Color
+import com.oleh.groovy.objects.Car
+import com.oleh.groovy.objects.Engine
 
 /**
  * Created by Oleh Kudryavcev on 16.11.15.

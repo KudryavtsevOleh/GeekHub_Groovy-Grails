@@ -1,4 +1,6 @@
-package com.oleh.groovy
+package com.oleh.groovy.objects
+
+import com.oleh.groovy.enums.Color
 
 /**
  * Created by Oleh Kudryavcev on 16.11.15.
