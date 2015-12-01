@@ -1,5 +1,7 @@
 package com.oleh.groovy.duck
 
+import groovy.transform.CompileStatic
+
 /**
  * Created by Oleh Kudryavcev on 23.11.15.
  */
@@ -18,6 +20,7 @@ class DuckWithDef extends Duck {
     }
 
     @Override
+    @CompileStatic
     String quack() {
         StringBuilder builder = new StringBuilder();
         builder.append('Duck with def\n')

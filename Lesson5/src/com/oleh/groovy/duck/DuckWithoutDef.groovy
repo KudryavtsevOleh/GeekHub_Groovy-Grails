@@ -2,6 +2,7 @@ package com.oleh.groovy.duck
 
 import com.oleh.groovy.enums.Color
 import com.oleh.groovy.enums.DuckBreed
+import groovy.transform.TypeChecked
 
 /**
  * Created by Oleh Kudryavcev on 23.11.15.
@@ -21,6 +22,7 @@ class DuckWithoutDef extends Duck {
     }
 
     @Override
+    @TypeChecked
     String quack() {
         StringBuilder builder = new StringBuilder();
         builder.append('Duck without def\n')
