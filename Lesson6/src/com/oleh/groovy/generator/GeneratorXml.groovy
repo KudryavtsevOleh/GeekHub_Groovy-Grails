@@ -6,15 +6,10 @@ import groovy.json.JsonBuilder
 /**
  * Created by oleh on 01.12.15.
  */
-class Generator {
+class GeneratorXml {
 
-    public def generate(def fruits, Boolean isXml) {
-        if (isXml) {
-            generateXml(fruits)
-        } else {
-            Map properties = fruits.getProperties()
-            generateJson(properties)
-        }
+    public def generate(def fruits) {
+        generateXml(fruits)
     }
 
     private String generateXml(def fruits) {
@@ -47,11 +42,6 @@ class Generator {
             generateFromMap(builder, it as Fruit)
         }
         builder.append('</fruits>')
-    }
-
-    private String generateJson(Map properties) {
-        def builder = new JsonBuilder()
-        builder.toString()
     }
 
 }

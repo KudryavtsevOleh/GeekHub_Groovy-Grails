@@ -1,4 +1,4 @@
-package com.oleh.groovy.parser
+package com.oleh.groovy.parsers
 
 import com.oleh.groovy.enums.AppleType
 import com.oleh.groovy.enums.Color
@@ -7,21 +7,16 @@ import com.oleh.groovy.fruits.Apple
 import com.oleh.groovy.fruits.Lemon
 import groovy.util.slurpersupport.GPathResult
 import groovy.xml.DOMBuilder
-import groovy.xml.QName
 import groovy.xml.StreamingMarkupBuilder
 
 /**
  * Created by oleh on 01.12.15.
  */
-class Parser {
+class ParserXml {
 
-    public void parse(String value, Boolean isXml) {
-        if (isXml) {
-            parseXmlUseXmlParser(value)
-            parseXmlUseXmlSlurper(value)
-        } else {
-
-        }
+    public void parse(String value) {
+        parseXmlUseXmlParser(value)
+        parseXmlUseXmlSlurper(value)
     }
 
     private void parseXmlUseXmlParser(String xml) {
