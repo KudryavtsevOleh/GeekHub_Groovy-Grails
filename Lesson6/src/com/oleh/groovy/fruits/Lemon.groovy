@@ -30,6 +30,6 @@ class Lemon extends Fruit {
         properties.isSour = this.isSour
         properties.pricePerKilo = this.pricePerKilo
         properties.countryFrom = this.countryFrom
-        return properties
+        properties
     }
 }
