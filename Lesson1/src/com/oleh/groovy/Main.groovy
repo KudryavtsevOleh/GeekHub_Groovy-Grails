@@ -14,12 +14,12 @@ class Main {
         person.setHobby('sport')
 
         Introduction intro = new Introduction(false)
-        intro.introduce(person)
+        intro.introduce(person);
 
-        intro.setShortVersion(true)
-        intro.introduce(person)
+        intro.setShortVersion(true);
+        intro.introduce(person);
 
-        involutionTest()
+        involutionTest();
     }
 
     private static involutionTest() {
